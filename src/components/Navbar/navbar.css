@@ -1,0 +1,181 @@
+
+nav{
+    background: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+nav .left-side{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav .left-side .menu-icon{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 999px;
+}
+
+.menu-icon:hover{
+    background: #313131;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 30px;
+}
+
+.logo span{
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.right-side{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-side .search-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    
+}
+.search-box .search-icon{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.search-box .search{
+    display: flex;
+    align-items: center;
+    border: solid 1px gray;
+    border-right: none;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    max-width: 500px;
+    padding: 5px 10px;
+}
+.search .search-icon{
+    display: none;
+}
+
+.search-box .search:focus-within{
+    border: solid 1px rgb(0, 110, 255);
+}
+.search-box .search:focus-within .search-icon{
+    display: block;
+}
+
+.search-box .search input{
+    font-size: 16px;
+    width: 100%;
+    background: transparent;
+    padding: 3px 5px;
+    color: #fff;
+}
+
+.search-box .search-icon:nth-child(2){
+    background: #252525;
+    padding: 8px;
+    width: 60px;
+    height: 43px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: solid 1px gray;
+    border-left: none;
+}
+.mic-icon{
+    background: #252525;
+    color: #fff;
+    padding: 8px;
+    border-radius: 999px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.mic-icon:hover{
+    background: #313131;
+}
+
+.search-box .search-icon:nth-child(2):hover{
+    background: #313131;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.video-icon, .notification-icon{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 999px;
+}
+.avatar{
+    cursor: pointer;
+}
+
+.video-icon:hover, .notification-icon:hover{
+    background: #313131;
+}
+
+@media(max-width: 525px){
+    .right-side{
+        justify-content: center;
+    }
+    .search-box{
+        margin: 0;
+    }
+    .search-box .search{
+        display: none;
+    }
+    .search-box .search-icon:nth-child(2){
+        border: none;
+        background: transparent;
+        width: auto;
+    }
+    .mic-icon{
+        background: transparent;
+        margin: 0;
+        width: auto;
+    }
+    .notification-icon{
+        display: none;
+    }
+}
+
+@media(max-width: 525px){
+    .mic-icon{
+        display: none;
+    }
+}
+@media(max-width: 366px){
+    .video-icon{
+        display: none;
+    }
+}
+@media(max-width: 320px){
+    .avatar{
+        display: none;
+    }
+}
