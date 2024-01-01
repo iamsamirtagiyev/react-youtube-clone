@@ -13,16 +13,16 @@ import { FaHistory } from "react-icons/fa";
 import './sidebar.css'
 import Avatar from 'react-avatar';
 
-const Sidebar = () => {
+const Sidebar = ({menu}) => {
     return (
-        <div className='sidebar'>
+        <div className='sidebar' id={menu}>
             <ul>
                 <li>
                     <NavLink to='/'>
                         {
                             ({ isActive }) => (
                                 <>
-                                    {isActive ? <MdHome /> : <MdOutlineHome />}
+                                    {isActive ? <MdHome/> : <MdOutlineHome />}
                                     <span>Ev</span>
                                 </>
                             )
@@ -30,7 +30,7 @@ const Sidebar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/shorts'><SiYoutubeshorts />Shorts</NavLink>
+                    <NavLink to='/shorts'><SiYoutubeshorts /><span>Shorts</span></NavLink>
                 </li>
                 <li>
                     <NavLink to='/subscribes'>
@@ -48,7 +48,7 @@ const Sidebar = () => {
             <div className="line"></div>
             <ul>
                 <li>
-                    <NavLink to='/special'>Siz<IoIosArrowForward size='17' /></NavLink>
+                    <NavLink to='/special'><span>Siz</span><IoIosArrowForward size='17' /></NavLink>
                 </li>
                 <li>
                     <NavLink to='/account'>
@@ -87,7 +87,7 @@ const Sidebar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/more'><IoIosArrowDown />Daha Çox</NavLink>
+                    <NavLink to='/more'><IoIosArrowDown /><span>Daha Çox</span></NavLink>
                 </li>
             </ul>
             <div className="line"></div>

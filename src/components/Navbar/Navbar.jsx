@@ -6,11 +6,17 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import Avatar from 'react-avatar';
 import './navbar.css';
 
-const Navbar = () => {
+const Navbar = ({menu, setMenu}) => {
+
+
+  const openMenu = () => {
+    setMenu(menu == '' ? 'close' : '')
+  }
+
   return (
     <nav>
       <div className="left-side">
-        <RxHamburgerMenu className='menu-icon' size='50'/>
+        <RxHamburgerMenu className='menu-icon' onClick={openMenu} size='50'/>
         <div className="logo">
           <img src="./images/logo.png" alt="logo" />
           <span>YouTube</span>

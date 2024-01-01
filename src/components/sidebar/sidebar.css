@@ -6,8 +6,22 @@
     width: 250px;
     height: calc(100vh - 60px);
     color: #fff;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 10px;
+
+}
+.sidebar#close{
+    width: 70px;
+}
+.sidebar#close span{
+    display: none;
+}
+.sidebar#close .subscribes{
+    display: none;
+}
+.sidebar#close a{
+    padding: 10px 15px;
 }
 
 .sidebar::-webkit-scrollbar{
@@ -36,6 +50,7 @@ ul li a{
     gap: 15px;
     padding: 10px 20px;
     border-radius: 7px;
+    white-space: nowrap;
 }
 
 ul li a:hover{
@@ -46,7 +61,7 @@ ul li a.active{
     background: rgba(255, 255, 255, .2);
 }
 
-ul li a svg{
+svg{
     font-size: 24px;
 }
 
