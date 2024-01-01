@@ -1,4 +1,3 @@
-import React, {useRef} from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosSearch } from "react-icons/io";
 import { MdMic, MdNotListedLocation } from "react-icons/md";
