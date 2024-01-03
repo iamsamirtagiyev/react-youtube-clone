@@ -1,0 +1,51 @@
+.my-channel{
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    gap: 20px;
+    background: #0f0f0f;
+    min-height: calc(100vh - 250px);
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.name{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.info .dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background: gray;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.buttons button{
+    background: rgba(255, 255, 255, .3);
+    border-radius: 50px;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+.buttons button:hover{
+    background: rgba(255, 255, 255, .5);
+}

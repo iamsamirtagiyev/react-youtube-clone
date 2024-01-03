@@ -147,8 +147,10 @@ nav .left-side .menu-icon{
     .right-side{
         justify-content: center;
     }
-    .search-box{
+    .right-side .search-box{
         margin: 0;
+        justify-content: flex-end;
+        width: 100%;
     }
     .search-box .search{
         display: none;
@@ -164,6 +166,12 @@ nav .left-side .menu-icon{
         width: auto;
     }
     .notification-icon{
+        display: none;
+    }
+}
+
+@media(max-width: 600px){
+    .menu-icon{
         display: none;
     }
 }

@@ -1,4 +1,4 @@
-import Account from "./pages/Account";
+import Account from "./pages/account/Account";
 import After from "./pages/After";
 import Special from "./pages/Special";
 import History from "./pages/History";

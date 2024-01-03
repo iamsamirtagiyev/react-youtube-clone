@@ -16,7 +16,7 @@ import Avatar from 'react-avatar';
 const Sidebar = ({menu}) => {
     return (
         <div className='sidebar' id={menu}>
-            <ul>
+            <ul className='menu-first'>
                 <li>
                     <NavLink to='/'>
                         {
@@ -46,7 +46,7 @@ const Sidebar = ({menu}) => {
                 </li>
             </ul>
             <div className="line"></div>
-            <ul>
+            <ul className='menu-second'>
                 <li>
                     <NavLink to='/special'><span>Siz</span><IoIosArrowForward size='17' /></NavLink>
                 </li>

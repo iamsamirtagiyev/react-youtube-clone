@@ -86,3 +86,10 @@
     background: gray;
     border-radius: 999px;
 }
+
+.channel-name, .views, .date{
+    cursor: pointer;
+}
+.channel-name:hover{
+    color: #fff;
+}
