@@ -17,6 +17,10 @@
     display: none;
 }
 
+body{
+    background: #0f0f0f;
+}
+
 input,
 button {
     border: none;

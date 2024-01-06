@@ -1,11 +1,14 @@
 import React from 'react'
+import './special.css'
 import Video from '../../components/video/Video'
-import './home.css'
 import data from '../../data.json'
+import Channel from '../../components/channel/Channel'
 
-const Home = () => {
+const Special = () => {
   return (
-    <div className='video-list home'>
+    <div className='wrapper'>
+      <Channel/>
+      <div className='video-list special'>
       {
         data.videos.map((video, index) => (
           <Video
@@ -20,7 +23,8 @@ const Home = () => {
         ))
       }
     </div>
+    </div>
   )
 }
 
-export default Home
+export default Special

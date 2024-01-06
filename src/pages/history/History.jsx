@@ -1,11 +1,11 @@
 import React from 'react'
-import Video from '../../components/video/Video'
-import './home.css'
+import Video from "../../components/video/Video";
 import data from '../../data.json'
+import './history.css'
 
-const Home = () => {
+const History = () => {
   return (
-    <div className='video-list home'>
+    <div className='video-list history'>
       {
         data.videos.map((video, index) => (
           <Video
@@ -23,4 +23,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default History

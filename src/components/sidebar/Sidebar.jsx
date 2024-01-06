@@ -91,7 +91,7 @@ const Sidebar = ({menu}) => {
                 </li>
             </ul>
             <div className="line"></div>
-            <div className="subscribes">
+            {/* <div className="subscribes">
                 <h4>Abunəliklər</h4>
                 <div className="channel">
                     <Avatar src='./images/channel-1.jpg' round='100px' size='30'/>
@@ -105,7 +105,7 @@ const Sidebar = ({menu}) => {
                     <Avatar src='./images/channel-3.jpg' round='100px' size='30'/>
                     <span>netd muzik</span>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

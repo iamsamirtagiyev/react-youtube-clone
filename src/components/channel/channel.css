@@ -4,7 +4,7 @@
     padding: 20px 0;
     gap: 20px;
     background: #0f0f0f;
-    min-height: calc(100vh - 250px);
+    /* min-height: calc(100vh - 250px); */
 }
 
 .title{
